@@ -39,7 +39,7 @@ const getAllProducts = async () => {
 const getAllProductsRequest = async page => { 
     const options = {
         method: "GET",
-        url: "https://www.ishopchangi.com/bin/cagcommerce/webservices/v2/cag/products/search.json?pageSize=100&currentPage="+page+"&query=::cagCategory:%2Fbeauty&categoryCodes=travel-electronics-chargers,beauty,food,Womens-fashion&lang=en",
+        url: "https://www.ishopchangi.com/bin/cagcommerce/webservices/v2/cag/products/search.json?pageSize=100&currentPage="+page+"&query=:price-asc&lang=en",
         headers: {
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36",
             "content-type": "application/json",  
